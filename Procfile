@@ -1,1 +1,1 @@
-web: npm start
+web: python -m SimpleHTTPServer $PORT
