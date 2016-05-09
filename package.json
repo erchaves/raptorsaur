@@ -5,6 +5,10 @@
   "eslintConfig": {
     "extends": "google"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/erchaves/raptorsaur"
+  },
   "scripts": {
     "start": "gulp & node server.js",
     "lint": "gulp lint-scss & gulp lint-js",
