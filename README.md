@@ -19,4 +19,4 @@ This is just a simple repo for a simple webpage.
 ```npm run lint```
 
 #### Notes
-I took some boilerplate from a build that uses google closure compiler. It seems to be working fine, but let me know if there are any quirks with the settings.
+I took some boilerplate from a build that uses google closure compiler. There's too many dependencies, but it works for now. I also realize it has a dependency on [JVM](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) which is an annoying dependency, sorry.
