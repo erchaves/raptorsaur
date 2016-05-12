@@ -25,4 +25,5 @@ app.use(function(err, req, res, next) {
   res.status(500).send('Something broke!');
 });
 
+console.log(`app running on localhost:${port}`);
 app.listen(port);
