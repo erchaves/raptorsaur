@@ -1,6 +1,7 @@
 const express = require('express');
 var serveStatic = require('serve-static');
 var app = express();
+var port = process.env.PORT || 8080; // set the port
 
 app.use(serveStatic(__dirname + '/dist'));
 app.use(serveStatic(__dirname + '/static'));
@@ -24,4 +25,4 @@ app.use(function(err, req, res, next) {
   res.status(500).send('Something broke!');
 });
 
-app.listen(8080);
+app.listen(port);
