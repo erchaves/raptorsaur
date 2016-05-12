@@ -5,20 +5,28 @@
   "eslintConfig": {
     "extends": "google"
   },
+  "engines": {
+    "node": "5.9.1"
+  },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/erchaves/raptorsaur"
+    "type": "git",
+    "url": "https://github.com/erchaves/raptorsaur"
   },
   "scripts": {
     "start": "gulp & node server.js",
+    "prod": "node server.js",
     "lint": "gulp lint-scss & gulp lint-js",
     "lint-js": "gulp lint-js",
     "lint-scss": "gulp lint-scss"
   },
   "devDependencies": {
     "del": "^2.2.0",
+    "ejs": "^2.4.1",
     "eslint": "^2.8.0",
     "eslint-config-google": "^0.5.0",
+    "express": "^4.13.4",
+    "express-nunjucks": "^1.0.0",
+    "google-closure-compiler": "^20160315.2.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-closure-compiler": "^0.2.17",

@@ -1,5 +1,27 @@
-var connect = require('connect');
+const express = require('express');
 var serveStatic = require('serve-static');
-connect().use(serveStatic(__dirname)).listen(8080, function(){
-  console.log('Server running on 8080...');
+var app = express();
+
+app.use(serveStatic(__dirname + '/dist'));
+app.use(serveStatic(__dirname + '/static'));
+app.set('views', './views');
+app.set('view engine', 'ejs');
+
+app.get('/', function (req, res) {
+  res.render('index', { title: 'Express' });
 });
+
+app.get('/about', function (req, res) {
+  res.render('about', { title: 'Express' });
+});
+
+app.use(function(req, res, next) {
+  res.status(404).send('Sorry cant find that!');
+});
+
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
+});
+
+app.listen(8080);
