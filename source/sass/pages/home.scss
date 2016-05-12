@@ -1,20 +1,12 @@
 @import '../vars';
 @import '../mixins';
 
-// temp tests
-body {
-  background: $color-bg;
-}
+.page-home {
+  .splash-img-wrap {
+    text-align: center;
+  }
 
-img {
-  width: $unit * 20;
-}
-
-h1 {
-  margin-bottom: $unit * 2;
-}
-// end tests
-
-section {
-  margin-bottom: $unit;
+  .splash-img {
+    width: 70%;
+  }
 }

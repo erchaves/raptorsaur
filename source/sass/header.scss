@@ -1,0 +1,31 @@
+@import 'vars';
+@import 'mixins';
+
+.header {
+  width: 100%;
+  line-height: $unit * 3;
+  margin-bottom: $unit * 4;
+
+  .h1 {
+    margin-bottom: $unit * .25;
+  }
+
+  .nav {
+    li {
+      display: inline-block;
+      padding-left: $unit;
+
+      &.active a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+}

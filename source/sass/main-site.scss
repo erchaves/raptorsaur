@@ -1,5 +1,32 @@
 @import 'vars';
 @import 'global';
 
+// Elements
+@import 'header';
+
 // Pages
 @import 'pages/home';
+
+.wrapper {
+  font-size: $unit;
+  padding-top: $page-padding;
+}
+
+.container {
+  padding: 0 $page-padding;
+}
+
+.text-section {
+  max-width: 600px;
+
+  .image-wrap {
+    margin: ($unit * 2) 0 $unit 0;
+  }
+
+  p {
+    margin-bottom: $unit * .5;
+  }
+}
+
+// put this at the end
+@import 'responsive';
