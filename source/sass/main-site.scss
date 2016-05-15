@@ -18,7 +18,7 @@
 }
 
 .text-section {
-  max-width: 600px;
+  max-width: $unit * 30;
 
   .image-wrap {
     // margin: ($unit * 2)
@@ -27,11 +27,12 @@
   p {
     margin-bottom: $unit;
     line-height: 1.5em;
+    letter-spacing: 0.02em;
   }
 }
 
 .splash-img {
-  width: 60%;
+  width: 50%;
 }
 
 .instagram-link {

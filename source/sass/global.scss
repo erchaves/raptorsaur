@@ -89,3 +89,7 @@ section {
 .clearfix {
   @extend %clearfix;
 }
+
+.no-wrap {
+  white-space: nowrap;
+}

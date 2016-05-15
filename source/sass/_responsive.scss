@@ -23,6 +23,11 @@
       display: none;
     }
   }
+
+  .force-justify {
+    // don't justify when it wraps
+    text-align: center !important;
+  }
 }
 
 @media (max-width: $responsive-size-sm) {
