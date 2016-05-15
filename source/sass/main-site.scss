@@ -6,6 +6,7 @@
 
 // Pages
 @import 'pages/home';
+@import 'pages/page-type-text';
 
 .wrapper {
   font-size: $unit;
@@ -20,11 +21,34 @@
   max-width: 600px;
 
   .image-wrap {
-    margin: ($unit * 2) 0 $unit 0;
+    // margin: ($unit * 2)
   }
 
   p {
-    margin-bottom: $unit * .5;
+    margin-bottom: $unit;
+    line-height: 1.5em;
+  }
+}
+
+.splash-img {
+  width: 60%;
+}
+
+.instagram-link {
+  a {
+    position: relative;
+    top: 3px;
+    opacity: .8;
+    // make it feel better spaced
+    padding-left: 4px;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  img {
+    width: 1.25em;
   }
 }
 
