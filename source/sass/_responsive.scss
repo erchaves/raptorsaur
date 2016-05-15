@@ -6,11 +6,22 @@
   }
 
   .container {
-    padding: 0 $unit;
+    padding: 0 $page-padding-sm;
   }
 
-  .header .h4 {
-    display: none;
+  .header {
+    .h1,
+    .right {
+      line-height: $unit * 2;
+    }
+
+    .h1 {
+      font-size: 2.5em;
+    }
+
+    .h4 {
+      display: none;
+    }
   }
 }
 
@@ -18,9 +29,5 @@
   .wrapper {
     font-size: .6em;
     padding-top: $page-padding-sm;
-  }
-
-  .container {
-    padding: 0 $page-padding-sm;
   }
 }

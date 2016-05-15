@@ -37,10 +37,9 @@
 .instagram-link {
   a {
     position: relative;
-    top: 3px;
     opacity: .8;
     // make it feel better spaced
-    padding-left: 4px;
+    margin-left: 4px;
 
     &:hover {
       opacity: 1;
@@ -49,6 +48,9 @@
 
   img {
     width: 1.25em;
+    // make it feel better spaced
+    top: 3px;
+    position: relative;
   }
 }
 

@@ -8,15 +8,30 @@
 
   .h1 {
     margin-bottom: $unit * .25;
+    line-height: 1em;
+    // make it the same width as the tagline
+    font-size: 3.66em;
+    // make it feel aligned
+    margin-left: -0.08em;
+  }
+
+  .h4 {
+    font-size: 1em;
+    letter-spacing: 0;
   }
 
   .nav {
     li {
       display: inline-block;
-      padding-left: $unit;
+      padding-left: 1em;
+      font-weight: 600;
+
+      a {
+        line-height: 2em;
+      }
 
       &.active a {
-        text-decoration: underline;
+        color: $black;
       }
     }
   }
