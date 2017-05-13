@@ -16,6 +16,10 @@ app.get('/about', function (req, res) {
   res.render('about', { title: 'Express' });
 });
 
+app.get('/dinosaur-news', function (req, res) {
+  res.render('dinosaur-news', { title: 'dinosaur-news' });
+});
+
 app.use(function(req, res, next) {
   res.status(404).send('Sorry cant find that!');
 });
