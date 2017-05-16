@@ -1,22 +1,45 @@
-# raptorsaur
-The Raptorsaur.com website
-This is just a simple repo for a simple webpage.
+# node-express-dust vanilla js scaffolding
 
-### Dependencies
-- [Node.js](https://nodejs.org/en/) — `$ brew install node`
+## A vanilla js scaffolding powered by node, express, and dust templating.
 
-### Getting started
-1. `git clone https://github.com/erchaves/raptorsaur`
-2. Install dependencies:
-```npm install```
+### Features:
+- Simple ES6 class module structure. No extra framework.
+- Babel with es2015
+- Gulp build process
+- Auto livereload
+- [Dust.js](http://www.dustjs.com/) template rendering with the same files on server or browser client.
+	 - Dust is compiled through a helper package [Sugarcone](https://www.npmjs.com/package/@erchaves/Sugarcone). More documentation coming soon for that.
+- Includes a tiny ~3kb of [Sprinkles](https://www.npmjs.com/package/@erchaves/sprinkles) for convenient DOM and AJAX utils.
+- Works on heroku out of the box
 
-### Development
-1. Run the builds and the local server.
-```npm start```
-2. View the site at [localhost:8080](http://localhost:8080){target="_blank"}
+### Development Setup
 
-### Lint
-```npm run lint```
+- Install the dependencies:
+```bash
+npm install
+```
+- Copy or rename `readme.env` to `.env`.
+	- The .env file will get parsed by app-express.js.
+	- .env is .gitignored and can be used to store private tokens.
 
-#### Notes
-I took some boilerplate from a build that uses google closure compiler. There's too many dependencies, but it works for now. I also realize it has a dependency on [JVM](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) which is an annoying dependency, sorry.
+
+- Run the gulp build with livereload and start the server.
+```bash
+npm run dev
+# or just run 'gulp' if you have gulp installed globally.
+# The app will be served at `localhost:3000`
+```
+
+### Production Setup
+- Run the production gulp build and start the server.
+```bash
+npm start
+# npm prestart will automatically run the gulp build before starting.
+# This works on services like Heroku too. So gulp runs on deploy.
+```
+
+### Demo
+- You can a tiny test here: [https://erchaves-node-express-dust.herokuapp.com/](https://erchaves-node-express-dust.herokuapp.com/)
+
+### Future Features
+- Make a simple module base class with a destory function that will auto-unbind events

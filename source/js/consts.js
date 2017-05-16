@@ -1,1 +1,0 @@
-export const EMAIL_REGEXP = /^([a-z0-9_\.\\+-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/i;

@@ -1,3 +1,10 @@
+# Environment vars
+.env
+
+# Build
+dist
+lib
+
 # Logs
 logs
 *.log
@@ -6,8 +13,5 @@ npm-debug.log*
 # Dependency directory
 node_modules
 
-# Optional npm cache directory
-.npm
-
-# Optional REPL history
-.node_repl_history
+# Temporal files
+.DS_Store
