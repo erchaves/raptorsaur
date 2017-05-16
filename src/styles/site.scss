@@ -1,5 +1,7 @@
 @import 'variables.scss';
 
+@include stickyfooter();
+
 html {
   font-size: $font-size-base;
 }

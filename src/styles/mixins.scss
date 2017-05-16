@@ -33,7 +33,39 @@
     transform: translateY(-50%) translateX(-50%);
 }
 
-@mixin transition(){
+@mixin transition() {
   transition-property: all;
   transition-duration: $transition-time-slow;
+}
+
+@mixin stickyfooter() {
+  // sticky footer https://css-tricks.com/couple-takes-sticky-footer/
+  html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper {
+    flex: 1;
+    // padding: 20px 0;
+  }
+}
+
+@mixin flex-menu() {
+  .menu {
+    flex-direction: row;
+    display: flex;
+
+    .menu-item {
+      display: flex;
+      flex: 1 1;
+      height: 100%;
+      padding: 2rem 1rem;
+      text-transform: uppercase;
+      justify-content: center;
+    }
+  }
 }

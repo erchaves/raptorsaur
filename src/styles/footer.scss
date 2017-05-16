@@ -1,0 +1,11 @@
+.section-footer {
+  @include flex-menu();
+
+  background: $color-grey;
+  border-top: solid .25rem $color-lime;
+
+  &,
+  a {
+    color: $color-white;
+  }
+}

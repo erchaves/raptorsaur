@@ -28,9 +28,11 @@
 </head>
 <body>
   <div class="wrapper">
+    {>"./partials/header"/}
     {+page_body}{/page_body}
     {>"partials/modal"/}
   </div>
+  {>"./partials/footer"/}
 
   <script>
     window.appData = {appData|js|s};
