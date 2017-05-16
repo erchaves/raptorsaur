@@ -1,8 +1,8 @@
 {
-  "name": "node-express-dust",
-  "description": "A vanilla js scaffolding for working with node, express, and dust",
+  "name": "Raptorsaur.com website",
+  "description": "The Raptorsaur.com website",
   "license": "MIT",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "author": "eric.chaves.llc@gmail.com",
   "scripts": {
     "start": "node ./server.js",
@@ -50,6 +50,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erchaves/node-express-dust"
+    "url": "git+https://github.com/erchaves/raptorsaur"
   }
 }
