@@ -1,11 +1,4 @@
 .section-header {
-  @include flex-menu();
 
-  color: $color-grey;
   border-bottom: solid .5rem $color-lime;
-
-  a.active {
-    color: $color-white;
-    background: $color-lime;
-  }
 }
