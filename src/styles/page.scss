@@ -1,12 +1,9 @@
 .page {
-  p {
-    margin-bottom: .625rem;
-  }
-
   .h1 {
     font-size: $font-size-h1;
     letter-spacing: $letter-spacing-h1;
     line-height: $line-height-site;
+    margin-bottom: 3.125rem;
     color: $color-orange;
   }
 
@@ -33,5 +30,13 @@
 
   .page-content {
     padding: 6rem 5rem;
+  }
+
+  .page-content-inner {
+    margin-left: 7.5rem;
+
+    p {
+      max-width: 40rem;
+    }
   }
 }

@@ -1,0 +1,31 @@
+.face-pile {
+  .face-card {
+    display: inline-block;
+    float: left;
+    margin-left: 1.8rem;
+    margin-bottom: 3rem;
+    width: 12rem;
+    position: relative;
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+      // todo: lighten by 50%
+      // border: 2px solid $color-grey;
+      border: 2px solid #aaa;
+      padding: 6px;
+      margin-bottom: .5rem;
+    }
+
+    .name {
+      @include h2();
+      display: block;
+      margin-bottom: $margin-bottom-std;
+    }
+
+    .title {
+      color: $color-blue;
+    }
+  }
+}

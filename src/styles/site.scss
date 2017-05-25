@@ -34,6 +34,11 @@ a {
   }
 }
 
+p {
+  line-height: $line-height-site;
+  margin-bottom: $margin-bottom-std;
+}
+
 .h1,
 .h2,
 .h3,

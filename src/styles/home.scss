@@ -7,12 +7,12 @@
   }
 
   .h1 {
-    margin-bottom: 3.125rem;
     color: $color-grey;
   }
 
   .info-tooltip {
-    font-size: $font-size-med;
+    @include h2();
+
     background: $color-white;
     border-radius: 50%;
     display: inline-block;
@@ -21,7 +21,6 @@
     width: $info-tooltip-size;
     opacity: .5;
     color: $color-blue;
-    font-weight: $font-weight-bold;
     margin-left: -$info-tooltip-size * 2;
 
     &:hover {
@@ -38,9 +37,10 @@
     background: $color-white;
     line-height: $line-height-site;
 
-    a {
-      color: $color-blue;
-    }
+    // todo: consider UX, link colors should be consistent
+    // a {
+    //   color: $color-blue;
+    // }
   }
 
   .footer-tag {

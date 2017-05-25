@@ -10,4 +10,5 @@ module.exports = {
   siteName: siteName,
   canonicalUrl: siteRoot,
   siteImg: siteRoot + '/images/?',
+  mailtoHref: 'mailto:hello@raptorsaur.com?subject=hello',
 };

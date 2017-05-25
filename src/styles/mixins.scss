@@ -96,3 +96,8 @@
     border-color: $color;
   }
 }
+
+@mixin h2 {
+  font-size: $font-size-med;
+  font-weight: $font-weight-bold;
+}
