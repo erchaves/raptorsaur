@@ -9,6 +9,7 @@
   .nav-item {
     color: $color-grey;
     font-size: $font-size-nav-item;
+    position: relative;
 
     &.active,
     &:hover {
@@ -22,6 +23,12 @@
       color: $color-white;
       background: $color-lime;
     }
+  }
+
+  .logo-home {
+    @include center-v();
+
+    position: absolute;
   }
 }
 
