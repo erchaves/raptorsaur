@@ -1,14 +1,24 @@
 .navigation {
   @include flex-menu();
+  z-index: 2;
 
   min-height: $nav-height-mobile;
   background: $color-white;
+  font-weight: $font-weight-bold;
 
   .nav-item {
     color: $color-grey;
+    font-size: $font-size-nav-item;
 
     &.active,
     &:hover {
+      .logo-inactive {
+        display: none;
+      }
+
+      .logo-active {
+        display: block !important;
+      }
       color: $color-white;
       background: $color-lime;
     }

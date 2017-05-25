@@ -6,16 +6,25 @@ $color-grey: #4d4d4d;
 $color-lime: #c1e619;
 $color-aqua: #1ac4bf;
 
-$font-site: 'PT Sans', sans-serif;
-$font-header: 'Oswald', sans-serif;
+$font-site: 'Dosis', sans-serif;
+// $font-header: $font-site;
+
 $font-size-base: 16px;
 $font-size-site: 18px;
-$font-size-letter: 20px;
-$font-size-h1: 3.5rem;
-$font-size-h2: 2rem;
+$font-size-med: 24px;
 
+$font-size-letter: 20px;
+$font-size-h1: 4.25rem;
+$font-size-h2: 2rem;
+$font-size-nav-item: 1.5rem;
+
+$font-size-h1-sm: $font-size-h1 / 2;
+
+$line-height-site: 1.4em;
+$letter-spacing-h1: -.01em;
 $letter-spacing-h2: .01em;
 
+$font-weight-site: 500;
 $font-weight-bold: 700;
 
 $container-width: 81.25rem; //1300px;
@@ -25,3 +34,8 @@ $transition-time-slow: 1s;
 $padding-modal: 3rem;
 $opacity-modal-focused-ui: .1;
 $nav-height-mobile: 4.5rem;
+
+$footer-icon-margin: 2.5rem;
+$info-tooltip-size: 1.25em;
+$footer-tag-border-radius: .3125rem;
+$border-footer: .375rem;

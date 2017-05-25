@@ -50,6 +50,7 @@
   }
   .wrapper {
     flex: 1;
+    position: relative;
     // padding: 20px 0;
   }
 }
@@ -63,8 +64,16 @@
       display: flex;
       flex: 1 1;
       padding: 2rem 1rem;
-      text-transform: uppercase;
+      text-transform: lowercase;
       justify-content: center;
     }
   }
+}
+
+@mixin full-size-img($src:'') {
+    @include full-size();
+    background-image: url($src);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }

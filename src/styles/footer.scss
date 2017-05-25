@@ -1,11 +1,37 @@
 .section-footer {
   @include flex-menu();
 
+  padding: 1.5rem;
   background: $color-grey;
-  border-top: solid .25rem $color-lime;
+  border-top: solid $border-footer $color-lime;
 
   &,
   a {
     color: $color-white;
+  }
+
+  .section-footer-inner {
+    margin-right: 10%;
+    float: right;
+    position: relative;
+  }
+
+  .contact-us,
+  .social-icons {
+    float: left;
+
+    a {
+      margin-left: $footer-icon-margin;
+    }
+  }
+
+  .contact-us {
+    a {
+      @include center-v();
+
+      right: 100%;
+      // bias it to make it look more correct.
+      margin-top: -2px;
+    }
   }
 }

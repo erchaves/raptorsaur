@@ -8,7 +8,49 @@
 
 // Note: This should be the main responsive breakpoint
 @media #{$medium-and-down} {
+  .page {
+    .page-content {
+      padding: 3rem 2.5rem;
+    }
 
+    .h1 {
+      font-size: $font-size-h1-sm;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .page-home {
+    .info-tooltip {
+      font-size: $font-size-site;
+      margin-left: -3rem;
+    }
+
+    .info-content {
+      padding: 1rem;
+    }
+
+    .footer-tag {
+      top: auto;
+      margin-top: 0;
+      bottom: -$border-footer;
+      width: 100%;
+      border-radius: 0;
+      padding: .5rem .75rem;
+    }
+  }
+
+  .section-footer {
+    .section-footer-inner {
+      margin-right: 0;
+    }
+
+    .contact-us,
+    .social-icons {
+      a {
+        margin-left: 1rem;
+      }
+    }
+  }
 }
 
 // Note: Try to use this sparingly, just for tweaks to extra small screens

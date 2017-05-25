@@ -1,4 +1,55 @@
 // example of styles specfic to page
 .page-home {
+  .splash-img {
+    // todo: check this solution
+    z-index: -1;
+    background-position: 50% 100%;
+  }
 
+  .h1 {
+    margin-bottom: 3.125rem;
+  }
+
+  .info-tooltip {
+    font-size: $font-size-med;
+    background: $color-white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    height: $info-tooltip-size;
+    width: $info-tooltip-size;
+    opacity: .5;
+    color: $color-aqua;
+    font-weight: $font-weight-bold;
+    margin-left: -$info-tooltip-size * 2;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    span {
+      @include center-both();
+    }
+  }
+
+  .info-content {
+    padding: 2rem 2.75rem;
+    background: $color-white;
+    line-height: $line-height-site;
+
+    a {
+      color: $color-aqua;
+    }
+  }
+
+  .footer-tag {
+    @include center-h();
+
+    top: 100%;
+    margin-top: -$footer-tag-border-radius;
+    background: $color-lime;
+    border-radius: $footer-tag-border-radius;
+    padding: 1rem .75rem;
+    text-align: center;
+  }
 }

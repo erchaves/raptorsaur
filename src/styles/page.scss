@@ -1,11 +1,12 @@
 .page {
-  h1 {
-    font-size: 1.5rem;
-    text-transform: capitalize;
+  p {
+    margin-bottom: .625rem;
   }
 
-  p {
-    margin: 1rem 0;
+  .h1 {
+    font-size: $font-size-h1;
+    letter-spacing: $letter-spacing-h1;
+    line-height: $line-height-site;
   }
 
   // temp demo styles
@@ -22,5 +23,9 @@
 
   .btn-modal-show {
     margin-top: 10vh;
+  }
+
+  .page-content {
+    padding: 6rem 5rem;
   }
 }

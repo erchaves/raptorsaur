@@ -8,9 +8,10 @@ html {
 
 body {
   background: $color-white;
-  color: $color-black;
+  color: $color-grey;
   font-family: $font-site;
   font-size: $font-size-site;
+  font-weight: $font-weight-site;
   margin: 0;
   padding: 0;
 }
@@ -31,4 +32,8 @@ a {
 .h4 {
     margin: 0;
     word-wrap: break-word;
+}
+
+.bg-img {
+  @include full-size-img();
 }
