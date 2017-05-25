@@ -20,7 +20,7 @@
     height: $info-tooltip-size;
     width: $info-tooltip-size;
     opacity: .5;
-    color: $color-aqua;
+    color: $color-blue;
     font-weight: $font-weight-bold;
     margin-left: -$info-tooltip-size * 2;
 
@@ -39,7 +39,7 @@
     line-height: $line-height-site;
 
     a {
-      color: $color-aqua;
+      color: $color-blue;
     }
   }
 
@@ -48,7 +48,7 @@
 
     top: 100%;
     margin-top: -$footer-tag-border-radius;
-    background: $color-lime;
+    background: $color-green;
     border-radius: $footer-tag-border-radius;
     padding: 1rem .75rem;
     text-align: center;

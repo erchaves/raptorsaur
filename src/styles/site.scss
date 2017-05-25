@@ -14,6 +14,14 @@ body {
   font-weight: $font-weight-site;
   margin: 0;
   padding: 0;
+
+  // the default is green
+  &.theme-blue {
+    @include page-theme($color-blue);
+  }
+  &.theme-orange {
+    @include page-theme($color-orange);
+  }
 }
 
 a {

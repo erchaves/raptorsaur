@@ -77,3 +77,22 @@
     background-size: cover;
     background-position: 50% 50%;
 }
+
+@mixin page-theme($color:pink) {
+  .section-header {
+    border-color: $color;
+  }
+
+  .navigation {
+    .nav-item {
+      &.active,
+      &:hover {
+        background: $color;
+      }
+    }
+  }
+
+  .section-footer {
+    border-color: $color;
+  }
+}

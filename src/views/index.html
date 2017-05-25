@@ -26,8 +26,9 @@
 
   <link rel="stylesheet" href="/main.css">
 </head>
-<body>
+<body class="theme-{+page_theme}green{/page_theme}">
   <div class="wrapper">
+    {>"./partials/header"/}
     {+page_body}{/page_body}
     {>"partials/modal"/}
   </div>
