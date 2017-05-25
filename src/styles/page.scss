@@ -6,6 +6,9 @@
     margin-bottom: 3.125rem;
     color: $color-orange;
   }
+  .h1-sm {
+    font-size: 3.375rem;
+  }
 
   .header-eyebrow {
     color: $color-blue;
@@ -33,6 +36,10 @@
   }
 
   .page-content-inner {
+    &.no-indent {
+      margin-left: 0;
+    }
+
     margin-left: 7.5rem;
 
     p {
