@@ -34,14 +34,14 @@ module.exports = function (router, siteData) {
     res.render('pages/about', pageData);
   });
 
-  router.get('/people', function(req, res){
-    const pageData = getPageData(req, res, 'people');
-    res.render('pages/people', pageData);
+  router.get('/team', function(req, res){
+    const pageData = getPageData(req, res, 'team');
+    res.render('pages/team', pageData);
   });
 
-  router.get('/events', function(req, res){
-    const pageData = getPageData(req, res, 'events');
-    res.render('pages/events', pageData);
+  router.get('/news', function(req, res){
+    const pageData = getPageData(req, res, 'news');
+    res.render('pages/news', pageData);
   });
 
   router.get('/contact', function(req, res){
