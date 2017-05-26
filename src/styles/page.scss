@@ -1,4 +1,12 @@
 .page {
+
+  &.page-about {
+    // todo: quick fix
+    .h2 {
+      margin: $margin-bottom-md-std 0;
+    }
+  }
+
   .h1 {
     font-size: $font-size-h1;
     letter-spacing: $letter-spacing-h1;
@@ -10,8 +18,13 @@
     font-size: 3.375rem;
   }
 
+  .h2 {
+    font-size: $font-size-h2;
+    margin-bottom: $margin-bottom-md-std;
+  }
+
   .header-eyebrow {
-    color: $color-blue;
+    color: darken($color-green, 5%);
     font-size: $font-size-site;
   }
 

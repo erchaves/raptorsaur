@@ -26,7 +26,7 @@
   }
 
   .logo-home {
-    @include center-v();
+    @include center-both();
 
     position: absolute;
   }
@@ -87,17 +87,11 @@
     }
 
     &.is-open {
-      .bar-1,
-      .bar-4 {
-        visibility: hidden;
-        opacity: 0;
-      }
-
-      .bar-2 {
+      .bar-1 {
         transform: translateY(6px) rotate(45deg);
       }
 
-      .bar-3 {
+      .bar-2 {
         transform: translateY(0) rotate(-45deg);
       }
 
