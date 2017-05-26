@@ -28,6 +28,7 @@ class Navigation {
   }
 
   bindEvents() {
+    this.$navToggle.on('touchstart', this.handleToggle.bind(this));
     this.$navToggle.on('click', this.handleToggle.bind(this));
   }
 
