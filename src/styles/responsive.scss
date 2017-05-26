@@ -24,6 +24,10 @@
   }
 
   .page-home {
+    .h1 {
+      font-size: $font-size-h3;
+    }
+
     .info-tooltip {
       font-size: $font-size-site;
       margin-left: -3rem;
@@ -61,5 +65,18 @@
 @media #{$small-and-down} {
   .navigation .nav .nav-item {
     padding: 1.5rem .75rem;
+  }
+
+  .face-pile {
+    .face-card {
+      margin-left: 0;
+      display: block;
+    }
+  }
+
+  .page-contact {
+    .h1 {
+      font-size: 1.5rem;
+    }
   }
 }
