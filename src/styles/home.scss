@@ -65,4 +65,17 @@
   .human-centered {
     color: $color-orange;
   }
+
+  .human-centered-def {
+    margin-top: 2rem;
+
+    .def-word {
+      color: $color-orange;
+      display: block;
+    }
+
+    .adj {
+      font-style: italic;
+    }
+  }
 }

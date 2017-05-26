@@ -10,6 +10,8 @@
     color: $color-grey;
     font-size: $font-size-nav-item;
     position: relative;
+    // todo: quickfix
+    min-height: 4.5rem;
 
     &.active,
     &:hover {
@@ -87,6 +89,7 @@
     }
 
     &.is-open {
+
       .bar-1 {
         transform: translateY(6px) rotate(45deg);
       }
