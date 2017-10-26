@@ -22,7 +22,7 @@
   .h1 {
     font-size: $font-size-h1;
     letter-spacing: $letter-spacing-h1;
-    line-height: $line-height-site;
+    line-height: 1.125em;
     margin-bottom: 3.125rem;
     color: $color-orange;
   }
@@ -57,7 +57,7 @@
   }
 
   .page-content {
-    padding: 6rem 5rem;
+    padding: 6rem 5rem 4rem 5rem;
   }
 
   .page-content-inner {

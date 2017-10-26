@@ -4,13 +4,21 @@
     width: 95%;
     max-width: $container-width;
   }
+
+  .mobile-only {
+    display: none;
+  }
 }
 
 // Note: This should be the main responsive breakpoint
 @media #{$medium-and-down} {
+  .desktop-only {
+    display: none;
+  }
+
   .page {
     .page-content {
-      padding: 3rem 2.5rem;
+      padding: 8rem 2.5rem 4rem;
     }
 
     .h1 {
